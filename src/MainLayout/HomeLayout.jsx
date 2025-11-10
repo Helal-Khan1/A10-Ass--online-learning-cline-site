@@ -1,17 +1,25 @@
 import React from "react";
 import Naber from "../component/Naber";
 import { Outlet } from "react-router";
+import Footer from "../component/Footer";
 
 const HomeLayout = () => {
   return (
-    <div>
+    <div className="flex flex-col min-h-screen">
+      {/* Header */}
       <header>
-        <Naber></Naber>
+        <Naber />
       </header>
-      <main>
-        <Outlet></Outlet>
+
+      {/* Main Content */}
+      <main className="flex-grow">
+        <Outlet />
       </main>
-      <footer></footer>
+
+      {/* Footer */}
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 };

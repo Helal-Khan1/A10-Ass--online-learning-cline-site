@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
 import MyContaner from "./Mycontaner";
 
 const Naber = () => {
@@ -18,7 +18,7 @@ const Naber = () => {
   );
   return (
     <div>
-      <div className="navbar bg-base-100 shadow-sm">
+      <div className="navbar stack bg-base-100 shadow-sm">
         <MyContaner className="flex">
           <div className="navbar-start">
             <div className="dropdown">
@@ -50,7 +50,6 @@ const Naber = () => {
               </ul>
             </div>
             <div>
-              {" "}
               <img
                 src="https://i.ibb.co.com/ZRywqFjr/download-1.png"
                 className="w-20"
@@ -66,7 +65,9 @@ const Naber = () => {
             <ul className="menu menu-horizontal px-1">{links}</ul>
           </div>
           <div className="navbar-end">
-            <button className="btn">login</button>
+            <Link to="login">
+              <button className="btn">login</button>
+            </Link>
             <button className="btn">log Out</button>
           </div>
         </MyContaner>
