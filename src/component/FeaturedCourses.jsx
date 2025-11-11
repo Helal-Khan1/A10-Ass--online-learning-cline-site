@@ -16,7 +16,7 @@ const FeaturedCourses = () => {
   console.log(corses);
 
   useEffect(() => {
-    instance.get("/all_courses").then((res) => {
+    instance.get("/featuredCourses").then((res) => {
       setCorses(res.data);
     });
   }, [instance]);
