@@ -22,11 +22,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "corses",
-        element: (
-          <ProvetRouts>
-            <Courses></Courses>
-          </ProvetRouts>
-        ),
+        element: <Courses></Courses>,
       },
       {
         path: "corsDeatails/:id",
@@ -53,12 +49,12 @@ export const router = createBrowserRouter([
     element: <DashboardLayout></DashboardLayout>,
     children: [
       {
-        path: "enrol",
+        path: "enroll",
         element: <MyEnrolledCourses></MyEnrolledCourses>,
       },
       {
         path: "addcoruss",
-        element: <AddCourse />,
+        element: <AddCourse></AddCourse>,
       },
       {
         path: "myaddcoruss",

@@ -20,7 +20,7 @@ const Naber = () => {
         <NavLink to="/corses">Courses</NavLink>
       </li>
       <li>
-        <NavLink to="dashbord">Deshbord</NavLink>
+        <NavLink to="/dashbord">Deshbord</NavLink>
       </li>
     </>
   );

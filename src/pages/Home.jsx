@@ -16,7 +16,7 @@ const Home = () => {
         <section>
           {" "}
           <MyContaner>
-            <div className="flex ">
+            <div className="sm:flex px-5 ">
               <div className="flex items-center justify-center  h-[650px]   ">
                 <div>
                   <h1 className="bg-white w-[350px] p-1  rounded-3xl flex items-center gap-5  text-fast  ">

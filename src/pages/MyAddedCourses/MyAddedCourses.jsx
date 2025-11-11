@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 
 const MyAddedCourses = () => {
-    return (
-        <div>
-            Hi Ima add my corsess 
-        </div>
-    );
+  return <div>
+
+
+    
+  </div>;
 };
 
 export default MyAddedCourses;

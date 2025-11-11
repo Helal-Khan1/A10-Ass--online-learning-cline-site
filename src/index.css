@@ -10,3 +10,8 @@
 .text-second {
   font-family: "Inter", sans-serif;
 }
+
+.active button {
+  background-color: #00a598;
+  color: white;
+}
