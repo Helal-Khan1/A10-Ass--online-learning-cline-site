@@ -1,0 +1,244 @@
+{
+  "courses_data": [
+    {
+      "category": "Creative & Design Skills",
+      "courses": [
+        {
+          "title": "Graphic Design & Illustration",
+          "image_url": "https://i.ibb.co.com/ZkPzqhg/woman-with-editor-occupation-wearing-headphones.jpg",
+          "price": "$59.99",
+          "duration": "12 Weeks",
+          "category": "Creative & Design Skills",
+          "short_description": "Learn professional Graphic Design & Illustration — from logo creation to branding, poster design, and digital artwork.",
+          "more_description": "This course takes you from the fundamentals of design theory to advanced creative execution. You’ll master Adobe Photoshop and Illustrator while learning about color theory, typography, composition, and brand storytelling. Through practical assignments, you’ll build your own professional portfolio, design logos, social media creatives, and brand identity projects. By the end of this course, you’ll be able to confidently take freelance projects and apply your creative skills in real-world scenarios.",
+          "benefits": [
+            "Gain mastery in Adobe Photoshop & Illustrator",
+            "Build a professional design portfolio with real projects",
+            "Learn logo design, branding, and illustration techniques",
+            "Get personalized feedback and certification upon completion"
+          ]
+        },
+        {
+          "title": "Photography & Video Editing",
+          "image_url": "https://i.ibb.co.com/1Y126t2N/video-editor-content-creator-filming-tutorial-about-professionally-editing-footage.jpg",
+          "price": "$49.99",
+          "duration": "8 Weeks",
+          "category": "Creative & Design Skills",
+          "short_description": "Master photography and professional video editing — perfect for YouTube, social media, and commercial projects.",
+          "more_description": "In this hands-on course, you’ll learn how to shoot high-quality photos and videos using both DSLR and smartphone cameras. You’ll explore lighting techniques, camera settings, framing, and storytelling through visuals. In addition, you’ll dive deep into editing with Adobe Premiere Pro, DaVinci Resolve, and Final Cut Pro. The course covers color grading, sound design, transitions, and video effects to make your content visually appealing and professional. Whether you’re a content creator or aspiring filmmaker, this course helps you build a solid foundation and stand out online.",
+          "benefits": [
+            "Learn the art of composition, lighting, and storytelling",
+            "Edit videos professionally with Premiere Pro & DaVinci Resolve",
+            "Develop photography and videography techniques for all platforms",
+            "Build a portfolio for YouTube or commercial work"
+          ]
+        },
+        {
+          "title": "Music Production",
+          "image_url": "https://i.ibb.co.com/jZVV5mh4/view-futuristic-music-studio.jpg",
+          "price": "$64.99",
+          "duration": "10 Weeks",
+          "category": "Creative & Design Skills",
+          "short_description": "Turn your ideas into professional-quality music — learn DAWs, beat-making, mixing, and mastering.",
+          "more_description": "This course covers everything from basic music theory to professional production in software like FL Studio, Ableton Live, and Logic Pro. You’ll learn how to compose melodies, build drum patterns, layer instruments, and structure full tracks. The course also includes in-depth lessons on mixing, EQ, compression, and mastering to give your tracks studio-quality sound. You’ll get templates, project files, and real-world guidance on creating your first release-ready track. Perfect for aspiring producers, musicians, and sound designers who want to start producing from home.",
+          "benefits": [
+            "Learn to produce music using industry-standard DAWs",
+            "Understand the full process from composition to mastering",
+            "Create your own professional-quality tracks",
+            "Gain the confidence to release and share your music globally"
+          ]
+        },
+        {
+          "title": "Animation (2D & 3D)",
+          "image_url": "https://i.ibb.co.com/sp7Hcv85/3d-cartoon-fitness-man.jpg",
+          "price": "$79.99",
+          "duration": "14 Weeks",
+          "category": "Creative & Design Skills",
+          "short_description": "Bring your imagination to life through 2D and 3D animation — from storyboarding to final rendering.",
+          "more_description": "This course takes you through the complete animation pipeline — starting from storyboarding and character design to rigging, animating, and rendering. You’ll learn the principles of motion, timing, and expression while working on short animated scenes. Using tools like Blender, Toon Boom, and After Effects, you’ll create your own animated projects ready for portfolio or professional use. The course also introduces 3D modeling, lighting, and camera movement techniques to give depth and realism to your animations. It’s ideal for aspiring animators, illustrators, and storytellers who want to transform their creativity into motion.",
+          "benefits": [
+            "Master both 2D and 3D animation techniques",
+            "Learn character design, rigging, and scene composition",
+            "Create complete animated shorts for your portfolio",
+            "Develop industry-ready animation workflows"
+          ]
+        },
+        {
+          "title": "UX/UI Design",
+          "image_url": "https://i.ibb.co.com/Wpzw3RFH/download.jpg",
+          "price": "$84.99",
+          "duration": "10 Weeks",
+          "category": "Creative & Design Skills",
+          "short_description": "Learn UX/UI Design and create stunning digital products users love — from research to prototype.",
+          "more_description": "In this course, you’ll learn the full UX/UI design process, including user research, wireframing, prototyping, and visual design. You’ll master tools like Figma and Sketch to design user interfaces and interactive prototypes. You’ll also explore how to conduct usability testing, build design systems, and write case studies for your portfolio. With real-world projects and professional feedback, this course will prepare you for a career in product design, UX strategy, or freelancing. You’ll finish with a polished portfolio that demonstrates your ability to design functional, user-friendly, and visually appealing products.",
+          "benefits": [
+            "Master UX research, wireframing, and UI prototyping",
+            "Build interactive interfaces using Figma and Sketch",
+            "Learn how to conduct usability testing and improve designs",
+            "Create professional case studies for job interviews"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Business, Marketing & Entrepreneurship",
+      "courses": [
+        {
+          "title": "Digital Marketing & SEO",
+          "image_url": "https://i.ibb.co.com/Z6RTJTQ4/download.jpg",
+          "price": "$69.99",
+          "duration": "10 Weeks",
+          "category": "Business, Marketing & Entrepreneurship",
+          "short_description": "Master digital marketing strategies and SEO techniques to grow any business online.",
+          "more_description": "This course provides a complete understanding of modern digital marketing. You’ll learn how to run paid campaigns on Google and social media, optimize websites for SEO, track analytics, and create a winning digital marketing strategy. Through real-world projects, you’ll understand keyword research, content marketing, on-page and off-page optimization, and conversion rate improvement. Perfect for business owners, freelancers, and aspiring marketers who want to build a successful career in the digital world.",
+          "benefits": [
+            "Learn Google Ads, Facebook & Instagram marketing",
+            "Master SEO fundamentals and keyword research",
+            "Create and analyze real marketing campaigns",
+            "Boost business visibility and online sales"
+          ]
+        },
+        {
+          "title": "Entrepreneurship & Startup Management",
+          "image_url": "https://i.ibb.co.com/qF95m37p/download.jpg",
+          "price": "$79.99",
+          "duration": "12 Weeks",
+          "category": "Business, Marketing & Entrepreneurship",
+          "short_description": "Learn how to start, build, and scale your own business with proven startup frameworks.",
+          "more_description": "This course is designed for aspiring entrepreneurs who want to turn their ideas into profitable startups. You’ll explore business model creation, product validation, customer development, funding strategies, and growth hacking. With step-by-step lessons and practical exercises, you’ll gain the tools needed to manage operations, marketing, and financial planning. You’ll also learn from real startup case studies, investor insights, and modern management principles that help new businesses succeed in today’s fast-paced world.",
+          "benefits": [
+            "Understand how to build a startup from idea to launch",
+            "Learn funding, investor pitching, and business validation",
+            "Gain insights from successful startup case studies",
+            "Develop leadership and growth strategy skills"
+          ]
+        },
+        {
+          "title": "Leadership & Communication",
+          "image_url": "https://i.ibb.co.com/B2H3SvkC/download.jpg",
+          "price": "$59.99",
+          "duration": "8 Weeks",
+          "category": "Business, Marketing & Entrepreneurship",
+          "short_description": "Develop powerful leadership and communication skills to inspire teams and achieve goals.",
+          "more_description": "This course focuses on building the soft skills that drive success in any organization. You’ll learn how to lead teams effectively, resolve conflicts, and communicate with confidence. The lessons include practical techniques in emotional intelligence, persuasive communication, and decision-making. You’ll also learn how to motivate employees, handle workplace challenges, and become a confident public speaker. Whether you’re a team lead, manager, or entrepreneur, this course will help you lead with purpose and clarity.",
+          "benefits": [
+            "Improve leadership and emotional intelligence",
+            "Master public speaking and confident communication",
+            "Learn team motivation and conflict resolution",
+            "Enhance management effectiveness and decision-making"
+          ]
+        },
+        {
+          "title": "Project Management Essentials",
+          "image_url": "https://i.ibb.co.com/Txqv2GGk/download.jpg",
+          "price": "$74.99",
+          "duration": "10 Weeks",
+          "category": "Business, Marketing & Entrepreneurship",
+          "short_description": "Learn how to plan, execute, and deliver projects successfully with professional PM tools and methods.",
+          "more_description": "In this course, you’ll gain a strong foundation in modern project management techniques. You’ll learn how to plan project timelines, allocate resources, manage risks, and track performance using tools like Trello, Asana, and Microsoft Project. The course covers both traditional (Waterfall) and Agile (Scrum) methodologies, enabling you to handle projects of any size efficiently. You’ll work on case studies and practical assignments to apply what you learn, preparing you for roles in corporate, startup, or freelance environments.",
+          "benefits": [
+            "Master project planning, budgeting, and risk management",
+            "Learn Agile and Scrum methodologies for modern projects",
+            "Use professional tools like Trello and Asana",
+            "Enhance productivity and deliver successful results"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Personal Growth, Hobbies & Wellness",
+      "courses": [
+        {
+          "title": "Mindfulness & Meditation",
+          "image_url": "https://i.ibb.co.com/cXy5Nkz6/download.jpg",
+          "price": "$49.99",
+          "duration": "6 Weeks",
+          "category": "Personal Growth, Hobbies & Wellness",
+          "short_description": "Learn mindfulness and meditation techniques to reduce stress, improve focus, and achieve inner peace.",
+          "more_description": "This course helps you build a daily mindfulness practice to live a calmer, more balanced life. You’ll explore guided meditations, breathing techniques, and stress reduction methods used by experts worldwide. Learn how to stay present, manage anxiety, and cultivate gratitude. Each session includes practical exercises and reflections to help you integrate mindfulness into your work, relationships, and personal life. By the end, you’ll develop a clear, focused, and peaceful state of mind.",
+          "benefits": [
+            "Reduce stress and anxiety through guided meditations",
+            "Improve focus and emotional stability",
+            "Develop daily mindfulness and gratitude habits",
+            "Enhance mental clarity and overall well-being"
+          ]
+        },
+        {
+          "title": "Time Management & Productivity Mastery",
+          "image_url": "https://i.ibb.co.com/dwgQ9CDt/download.jpg",
+          "price": "$54.99",
+          "duration": "8 Weeks",
+          "category": "Personal Growth, Hobbies & Wellness",
+          "short_description": "Master time management and boost your productivity with proven systems and tools.",
+          "more_description": "This course teaches you how to take control of your time and achieve more in less effort. You’ll learn proven methods such as the Pomodoro Technique, Eisenhower Matrix, and SMART goal-setting. Discover how to eliminate distractions, set priorities, and manage energy effectively. You’ll also get hands-on templates for daily planning and personal productivity tracking. Ideal for professionals, students, or anyone who wants to improve their focus, organization, and life balance.",
+          "benefits": [
+            "Boost productivity and achieve personal goals faster",
+            "Learn time-saving systems and prioritization frameworks",
+            "Eliminate procrastination and distractions",
+            "Develop consistent daily routines for success"
+          ]
+        },
+        {
+          "title": "Emotional Intelligence (EQ) Development",
+          "image_url": "https://i.ibb.co.com/LsMV1Pk/download.png",
+          "price": "$59.99",
+          "duration": "8 Weeks",
+          "category": "Personal Growth, Hobbies & Wellness",
+          "short_description": "Enhance your emotional intelligence to strengthen relationships, leadership, and decision-making.",
+          "more_description": "This course guides you through the core components of emotional intelligence — self-awareness, empathy, motivation, and social skills. Through practical exercises and real-world examples, you’ll learn how to manage emotions, improve communication, and respond effectively under pressure. The lessons are designed to help you build deeper connections, handle conflicts gracefully, and make more thoughtful decisions. Perfect for leaders, professionals, and anyone seeking personal and emotional growth.",
+          "benefits": [
+            "Improve self-awareness and emotional control",
+            "Enhance communication and interpersonal skills",
+            "Build stronger personal and professional relationships",
+            "Develop empathy and conflict resolution abilities"
+          ]
+        },
+        {
+          "title": "Cooking & Culinary Skills for Beginners",
+          "image_url": "https://i.ibb.co.com/LXL2fgBz/download.jpg",
+          "price": "$44.99",
+          "duration": "6 Weeks",
+          "category": "Personal Growth, Hobbies & Wellness",
+          "short_description": "Learn the art of cooking delicious and healthy meals from scratch — even if you’re a beginner.",
+          "more_description": "This fun and interactive course helps you develop essential cooking skills while exploring global cuisines. You’ll learn knife techniques, ingredient preparation, seasoning, and plating. From quick everyday meals to special dishes, this course makes cooking enjoyable and rewarding. You’ll also get practical guidance on nutrition, meal planning, and kitchen safety. Whether you want to cook for yourself, your family, or start a culinary side hustle, this course is the perfect foundation.",
+          "benefits": [
+            "Learn basic to intermediate cooking techniques",
+            "Understand flavor pairing and recipe creation",
+            "Gain practical meal planning and nutrition tips",
+            "Build confidence in the kitchen with real recipes"
+          ]
+        },
+        {
+          "title": "Fitness & Healthy Living",
+          "image_url": "https://i.ibb.co.com/C5XsM54m/images.jpg",
+          "price": "$64.99",
+          "duration": "10 Weeks",
+          "category": "Personal Growth, Hobbies & Wellness",
+          "short_description": "Get fit and build healthy habits through guided workouts, nutrition, and lifestyle coaching.",
+          "more_description": "This course focuses on improving your physical health, energy, and mindset through fitness and wellness routines. You’ll learn full-body exercises, stretching, and home-friendly workout plans designed for all levels. Alongside fitness, you’ll explore the importance of balanced nutrition, sleep, and motivation. Every module provides actionable steps to help you build lifelong healthy habits. Ideal for anyone who wants to transform their lifestyle and achieve sustainable results.",
+          "benefits": [
+            "Build strength and flexibility with guided workouts",
+            "Learn about balanced nutrition and healthy eating",
+            "Develop a sustainable fitness and wellness routine",
+            "Improve energy, mood, and confidence every day"
+          ]
+        },
+        {
+          "title": "Financial Literacy & Smart Budgeting",
+          "image_url": "https://i.ibb.co.com/GQ1SLC7c/download.jpg",
+          "price": "$69.99",
+          "duration": "8 Weeks",
+          "category": "Personal Growth, Hobbies & Wellness",
+          "short_description": "Learn how to manage your money, save smarter, and build long-term financial stability.",
+          "more_description": "This course simplifies personal finance and teaches you how to take control of your money. You’ll learn how to create a budget, manage debt, understand credit, and start investing with confidence. With real-life examples and interactive worksheets, you’ll gain practical knowledge to improve your financial habits and plan for the future. Perfect for students, working professionals, or anyone who wants to make smarter financial decisions and achieve financial freedom.",
+          "benefits": [
+            "Understand budgeting, saving, and investing basics",
+            "Learn how to manage debt and improve credit score",
+            "Create a personal financial plan for long-term goals",
+            "Gain confidence in handling money and making investments"
+          ]
+        }
+      ]
+    }
+  ]
+}

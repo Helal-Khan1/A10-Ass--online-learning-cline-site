@@ -7,6 +7,9 @@ import DashboardLayout from "../MainLayout/DashboardLayout";
 import MyEnrolledCourses from "../pages/MyEnrolledCourses/MyEnrolledCourses";
 import AddCourse from "../pages/AddCourse/AddCourse";
 import MyAddedCourses from "../pages/MyAddedCourses/MyAddedCourses";
+import Register from "../pages/Register/Register";
+import ProvetRouts from "../ProvetRout/ProvetRouts";
+import CorsDetails from "../component/CorsDetails";
 
 export const router = createBrowserRouter([
   {
@@ -19,15 +22,29 @@ export const router = createBrowserRouter([
       },
       {
         path: "corses",
-        element: <Courses></Courses>,
+        element: (
+          <ProvetRouts>
+            <Courses></Courses>
+          </ProvetRouts>
+        ),
+      },
+      {
+        path: "corsDeatails/:id",
+        loader: ({ params }) =>
+          fetch(`http://localhost:3000/all_courses/${params.id}`),
+        element: (
+          <ProvetRouts>
+            <CorsDetails></CorsDetails>
+          </ProvetRouts>
+        ),
       },
       {
         path: "login",
         element: <Login></Login>,
       },
       {
-        path: "login",
-        element: <Login></Login>,
+        path: "register",
+        element: <Register></Register>,
       },
     ],
   },

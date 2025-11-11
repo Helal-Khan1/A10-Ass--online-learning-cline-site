@@ -1,0 +1,54 @@
+import React, { useEffect, useState } from "react";
+import { AuthContex } from "./AuthContex";
+import {
+  createUserWithEmailAndPassword,
+  GoogleAuthProvider,
+  onAuthStateChanged,
+  signInWithEmailAndPassword,
+  signInWithPopup,
+  signOut,
+} from "firebase/auth";
+import { auth } from "../Firebase/firebase.init";
+
+const AuthProvider = ({ children }) => {
+  const [user, setUser] = useState([]);
+  const [loding, setLoding] = useState(false);
+  const googleProvider = new GoogleAuthProvider();
+
+  const createUser = (email, password) => {
+    setLoding(true);
+    return createUserWithEmailAndPassword(auth, email, password);
+  };
+  const sigUser = (email, password) => {
+    return signInWithEmailAndPassword(auth, email, password);
+  };
+  const signWithGoogle = () => {
+    return signInWithPopup(auth, googleProvider);
+  };
+  const logOut = () => {
+    return signOut(auth);
+  };
+  useEffect(() => {
+    const unsuscrib = onAuthStateChanged(auth, (currentUser) => {
+      setUser(currentUser);
+
+      console.log(currentUser);
+    });
+    return () => {
+      unsuscrib;
+    };
+  }, []);
+
+  const authinfo = {
+    user,
+    createUser,
+    sigUser,
+    signWithGoogle,
+    logOut,
+
+    setUser,
+  };
+  return <AuthContex value={authinfo}>{children}</AuthContex>;
+};
+
+export default AuthProvider;

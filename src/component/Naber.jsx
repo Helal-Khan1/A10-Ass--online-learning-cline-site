@@ -1,18 +1,26 @@
 import React from "react";
 import { Link, NavLink } from "react-router";
 import MyContaner from "./Mycontaner";
+import useAuth from "../Hook/useAuth";
+import { LuLogOut } from "react-icons/lu";
+import { BiLogOut } from "react-icons/bi";
 
 const Naber = () => {
+  const { user, logOut } = useAuth();
+  console.log(user);
+  const loginhandalar = () => {
+    logOut();
+  };
   const links = (
     <>
       <li>
         <NavLink>Home</NavLink>
       </li>
       <li>
-        <NavLink>Courses</NavLink>
+        <NavLink to="/corses">Courses</NavLink>
       </li>
       <li>
-        <NavLink>Deshbord</NavLink>
+        <NavLink to="dashbord">Deshbord</NavLink>
       </li>
     </>
   );
@@ -65,10 +73,20 @@ const Naber = () => {
             <ul className="menu menu-horizontal px-1">{links}</ul>
           </div>
           <div className="navbar-end">
-            <Link to="login">
-              <button className="btn">login</button>
-            </Link>
-            <button className="btn">log Out</button>
+            {user ? (
+              <button
+                onClick={loginhandalar}
+                className="btn bg-[#00a598] px-5 text-white "
+              >
+                <LuLogOut></LuLogOut> Log Out
+              </button>
+            ) : (
+              <Link to="login">
+                <button className="btn  bg-[#00a598] px-5 text-white ">
+                  <BiLogOut></BiLogOut> Login
+                </button>
+              </Link>
+            )}
           </div>
         </MyContaner>
       </div>

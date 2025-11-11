@@ -8,16 +8,18 @@ import community from "../assets/chous Us/sapurt3.webp";
 
 import { MdElectricBolt, MdOutlineAccessTime } from "react-icons/md";
 import { FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router";
 
 const FeaturedCourses = () => {
   const instance = useAxious();
   const [corses, setCorses] = useState([]);
+  console.log(corses);
 
   useEffect(() => {
-    instance.get("/featuredCourses").then((res) => {
+    instance.get("/all_courses").then((res) => {
       setCorses(res.data);
     });
-  });
+  }, [instance]);
   return (
     <div className="bg-[#e7e8ec]  mt-50">
       <MyContaner>
@@ -46,16 +48,18 @@ const FeaturedCourses = () => {
                   </p>
                   <ul>
                     <li className="text-second">
-                      {cors.description.map((des) => (
+                      {cors.benefits.map((des) => (
                         <li className="">✅{des}</li>
                       ))}
                     </li>
                   </ul>
                   <div className="mt-7 flex items-center justify-between ">
                     <h1 className="font-bold">Price: {cors.price}</h1>
-                    <button className=" bg-[#00a598] px-5 text-white py-2 rounded-full text-fast flex items-center gap-2  ">
-                      View detais <FaArrowRight />
-                    </button>
+                    <Link to={`/corsDeatails/${cors._id}`}>
+                      <button className=" bg-[#00a598] px-5 text-white py-2 rounded-full text-fast flex items-center gap-2  ">
+                        View detais <FaArrowRight />
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div>
