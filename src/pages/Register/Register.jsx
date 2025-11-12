@@ -3,6 +3,7 @@ import { FcGoogle } from "react-icons/fc";
 import useAuth from "../../Hook/useAuth";
 import { auth } from "../../Firebase/firebase.init";
 import { Link, useLocation, useNavigate } from "react-router";
+import { toast } from "react-toastify";
 
 const Register = () => {
   const location = useLocation();
@@ -25,12 +26,12 @@ const Register = () => {
     const password = event.target.password.value;
     console.log({ name, email, photo, password });
     if (name.length < 4) {
-      alert("Name must be at least 3 characters long.");
+      toast("Name must be at least 3 characters long.");
       return;
     }
     const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
     if (!passwordRegex.test(password)) {
-      alert(
+      toast(
         "❌ Password must have uppercase, lowercase & at least 6 characters!"
       );
       return;
@@ -42,7 +43,7 @@ const Register = () => {
       })
       .catch((err) => {
         console.log(err);
-        alert(err.code);
+        toast(err.code);
       });
   };
   return (

@@ -8,7 +8,7 @@ import { BsYoutube } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <div className="bg-gradient-to-r from-[#17272a] via-[#162d2e] to-[#181d22] mt-16 w-full text-white ‍ px-15">
+    <div className="bg-gradient-to-r from-[#17272a] via-[#162d2e] to-[#181d22]  w-full text-white ‍ px-15">
       <MyContaner>
         {/* Grid Layout */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 py-16">

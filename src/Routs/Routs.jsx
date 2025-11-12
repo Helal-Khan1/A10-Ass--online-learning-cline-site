@@ -10,24 +10,31 @@ import MyAddedCourses from "../pages/MyAddedCourses/MyAddedCourses";
 import Register from "../pages/Register/Register";
 import ProvetRouts from "../ProvetRout/ProvetRouts";
 import CorsDetails from "../component/CorsDetails";
+import Loding from "../pages/AddCourse/Loding/Loding";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <HomeLayout></HomeLayout>,
+    hydrateFallbackElement: <Loding></Loding>,
     children: [
       {
         index: true,
+        hydrateFallbackElement: <Loding></Loding>,
         element: <Home></Home>,
       },
       {
         path: "corses",
+        hydrateFallbackElement: <Loding></Loding>,
         element: <Courses></Courses>,
       },
       {
         path: "corsDeatails/:id",
+        hydrateFallbackElement: <Loding></Loding>,
         loader: ({ params }) =>
-          fetch(`http://localhost:3000/all_courses/${params.id}`),
+          fetch(
+            `https://a10-assignment-cline-server-site.vercel.app/all_courses/${params.id}`
+          ),
         element: (
           <ProvetRouts>
             <CorsDetails></CorsDetails>
@@ -36,28 +43,39 @@ export const router = createBrowserRouter([
       },
       {
         path: "login",
+        hydrateFallbackElement: <Loding></Loding>,
         element: <Login></Login>,
       },
       {
         path: "register",
+        hydrateFallbackElement: <Loding></Loding>,
         element: <Register></Register>,
+      },
+      {
+        path: "loding",
+        hydrateFallbackElement: <Loding></Loding>,
+        element: <Loding></Loding>,
       },
     ],
   },
   {
     path: "/dashbord",
+    hydrateFallbackElement: <Loding></Loding>,
     element: <DashboardLayout></DashboardLayout>,
     children: [
       {
         path: "enroll",
+        hydrateFallbackElement: <Loding></Loding>,
         element: <MyEnrolledCourses></MyEnrolledCourses>,
       },
       {
         path: "addcoruss",
+        hydrateFallbackElement: <Loding></Loding>,
         element: <AddCourse></AddCourse>,
       },
       {
         path: "myaddcoruss",
+        hydrateFallbackElement: <Loding></Loding>,
         element: <MyAddedCourses></MyAddedCourses>,
       },
     ],

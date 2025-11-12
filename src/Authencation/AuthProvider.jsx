@@ -23,15 +23,17 @@ const AuthProvider = ({ children }) => {
     return signInWithEmailAndPassword(auth, email, password);
   };
   const signWithGoogle = () => {
+    setLoding(true);
     return signInWithPopup(auth, googleProvider);
   };
   const logOut = () => {
+    setLoding(true);
     return signOut(auth);
   };
   useEffect(() => {
     const unsuscrib = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);
-
+      setLoding(false);
       console.log(currentUser);
     });
     return () => {
@@ -45,7 +47,8 @@ const AuthProvider = ({ children }) => {
     sigUser,
     signWithGoogle,
     logOut,
-
+    loding,
+    setLoding,
     setUser,
   };
   return <AuthContex value={authinfo}>{children}</AuthContex>;

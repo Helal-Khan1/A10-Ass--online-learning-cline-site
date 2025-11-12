@@ -3,6 +3,7 @@ import MyContaner from "../../component/Mycontaner";
 import { FcGoogle } from "react-icons/fc";
 import { Link, Links, useLocation, useNavigate } from "react-router";
 import useAuth from "../../Hook/useAuth";
+import { toast } from "react-toastify";
 
 const Login = () => {
   const { sigUser, signWithGoogle } = useAuth();
@@ -12,13 +13,13 @@ const Login = () => {
   const googlesignhandalar = () => {
     signWithGoogle()
       .then(() => {
-        alert("User login successfully!");
+        toast("User login successfully!");
         setTimeout(() => {
           navigate(`${location.state ? location.state : "/"}`);
         }, 2000);
       })
       .catch((err) => {
-        alert(err.message);
+      toast(err.code);
       });
   };
   const loginhandalar = (event) => {
@@ -30,10 +31,10 @@ const Login = () => {
       .then((result) => {
         console.log(result.user);
         navigate(`${location.state ? location.state : "/"}`);
-        alert("user login successfully");
+        toast("user login successfully");
       })
       .catch((err) => {
-        alert(err.code);
+        toast(err.code);
       });
   };
   return (

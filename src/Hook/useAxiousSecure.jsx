@@ -1,18 +1,23 @@
 import axios from "axios";
-import React from "react";
+import React, { useEffect } from "react";
 import useAuth from "./useAuth";
 
 const intance = axios.create({
-  baseURL: "http://localhost:3000",
+  baseURL: "https://a10-assignment-cline-server-site.vercel.app",
 });
 
 const useAxiousSecure = () => {
   const { user } = useAuth();
-  intance.interceptors.request.use((config) => {
-    config.headers.Authorization = `Bearer ${user.accessToken} `;
+  useEffect(() => {
+    const requestInterceptor = intance.interceptors.request.use((config) => {
+      config.headers.Authorization = `Bearer ${user.accessToken}`;
 
-    return config;
-  });
+      return config;
+    });
+    return () => {
+      intance.interceptors.request.eject(requestInterceptor);
+    };
+  }, [user]);
   return intance;
 };
 

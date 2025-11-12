@@ -23,7 +23,7 @@ const FeaturedCourses = () => {
 
   return (
     <div className="bg-gray-100">
-      {/* Featured Courses Section */}
+  
       <MyContaner>
         <h1 className="font-bold text-4xl md:text-5xl text-center text-gray-800 pt-20 mb-12">
           Explore Our World's Best Courses
@@ -38,7 +38,6 @@ const FeaturedCourses = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
             >
-              {/* Image Section */}
               <div className="relative h-60 overflow-hidden">
                 <img
                   src={course.image_url}
@@ -52,7 +51,6 @@ const FeaturedCourses = () => {
                 </p>
               </div>
 
-              {/* Content Section */}
               <div className="p-5 flex flex-col justify-between flex-grow">
                 <div>
                   <h1 className="font-bold text-xl text-gray-800 mb-2">
@@ -74,7 +72,6 @@ const FeaturedCourses = () => {
                   </ul>
                 </div>
 
-                {/* Footer */}
                 <div className="mt-6 flex items-center justify-between pt-4 border-t">
                   <h1 className="font-bold text-lg text-gray-800">
                     💰 {course.price}

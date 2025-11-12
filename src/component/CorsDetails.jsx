@@ -3,20 +3,37 @@ import { useLoaderData } from "react-router";
 import { motion } from "framer-motion";
 import useAxious from "../Hook/useAxious";
 import useAxiousSecure from "../Hook/useAxiousSecure";
+import useAuth from "../Hook/useAuth";
+import { toast } from "react-toastify";
 
 const CourseDetails = () => {
   const data = useLoaderData();
   const instance = useAxiousSecure();
+  const { user } = useAuth();
 
   // const { _id } = data;
   // console.log(_id);
 
   const enrolhandalar = (e) => {
-    instance.post("/myEnroll_courses", e).then((res) => {
+    console.log(e);
+
+    const newCors = {
+      _id: e._id,
+      title: e.title,
+      category: e.category,
+      price: e.price,
+      duration: e.duration,
+      more_description: e.more_description,
+      benefits: e.benefits,
+      email: user.email,
+    };
+    console.log(newCors);
+    console.log(e._id);
+    instance.post("/myEnroll_courses", newCors).then((res) => {
       const EnrollCorus = res.data;
       if (EnrollCorus.insertedId) {
         console.log(EnrollCorus);
-        alert("Your Cors Enroll sucssussfully");
+        toast("Your Cors Enroll sucssussfully");
       }
     });
   };
@@ -86,7 +103,7 @@ const CourseDetails = () => {
               What You'll Learn 🎯
             </h3>
             <ul className="space-y-2">
-              {data.benefits.map((benefit, index) => (
+              {data.benefits?.map((benefit, index) => (
                 <li
                   key={index}
                   className="flex items-start gap-2 bg-gray-100 px-4 py-2 rounded-lg hover:bg-blue-50 transition-all"

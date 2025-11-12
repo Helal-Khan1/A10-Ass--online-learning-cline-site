@@ -53,7 +53,7 @@ const Courses = () => {
                     {course.title}
                   </h1>
                   <p className="text-gray-600 mb-3 text-sm leading-relaxed">
-                    {course.short_description.length > 100
+                    {course.short_description?.length > 100
                       ? course.short_description.slice(0, 100) + "..."
                       : course.short_description}
                   </p>
@@ -62,7 +62,7 @@ const Courses = () => {
                     What You’ll Learn 🎯
                   </h2>
                   <ul className="space-y-1 text-sm text-gray-600">
-                    {course.benefits.slice(0, 3).map((b, i) => (
+                    {course.benefits?.slice(0, 3)?.map((b, i) => (
                       <li key={i}>✅ {b}</li>
                     ))}
                   </ul>
