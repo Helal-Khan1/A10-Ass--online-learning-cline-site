@@ -18,7 +18,6 @@ const CourseDetails = () => {
     console.log(e);
 
     const newCors = {
-      _id: e._id,
       title: e.title,
       category: e.category,
       price: e.price,

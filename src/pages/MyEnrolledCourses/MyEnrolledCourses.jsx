@@ -5,9 +5,10 @@ import { Link } from "react-router";
 import { motion } from "framer-motion";
 import { FaArrowRight } from "react-icons/fa";
 import useAuth from "../../Hook/useAuth";
+import useAxious from "../../Hook/useAxious";
 
 const MyEnrolledCourses = () => {
-  const intance = useAxiousSecure();
+  const intance = useAxious();
   const { user } = useAuth();
   const [enroll, setEnroll] = useState([]);
 

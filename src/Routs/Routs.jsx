@@ -62,27 +62,47 @@ export const router = createBrowserRouter([
   {
     path: "/dashbord",
     hydrateFallbackElement: <Loding></Loding>,
-    element: <DashboardLayout></DashboardLayout>,
+    element: (
+      <ProvetRouts>
+        <DashboardLayout></DashboardLayout>
+      </ProvetRouts>
+    ),
     children: [
       {
         path: "enroll",
         hydrateFallbackElement: <Loding></Loding>,
-        element: <MyEnrolledCourses></MyEnrolledCourses>,
+        element: (
+          <ProvetRouts>
+            <MyEnrolledCourses></MyEnrolledCourses>
+          </ProvetRouts>
+        ),
       },
       {
         path: "addcoruss",
         hydrateFallbackElement: <Loding></Loding>,
-        element: <AddCourse></AddCourse>,
+        element: (
+          <ProvetRouts>
+            <AddCourse></AddCourse>
+          </ProvetRouts>
+        ),
       },
       {
         path: "myaddcoruss",
         hydrateFallbackElement: <Loding></Loding>,
-        element: <MyAddedCourses></MyAddedCourses>,
+        element: (
+          <ProvetRouts>
+            <MyAddedCourses></MyAddedCourses>
+          </ProvetRouts>
+        ),
       },
       {
         path: "update/:id",
         hydrateFallbackElement: <Loding></Loding>,
-        element:<UpdateCours></UpdateCours>,
+        element: (
+          <ProvetRouts>
+            <UpdateCours></UpdateCours>
+          </ProvetRouts>
+        ),
       },
     ],
   },

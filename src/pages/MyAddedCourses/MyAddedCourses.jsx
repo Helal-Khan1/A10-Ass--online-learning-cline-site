@@ -6,18 +6,20 @@ import { FaArrowRight } from "react-icons/fa";
 import { MdOutlineAccessTime } from "react-icons/md";
 import { motion } from "framer-motion";
 import { toast } from "react-toastify";
+import useAxious from "../../Hook/useAxious";
 
 const MyAddedCourses = () => {
   const { user } = useAuth();
   const [myaddCours, setMyaddCours] = useState([]);
 
   const instance = useAxiousSecure();
+  const instanceunSecure = useAxious();
   useEffect(() => {
-    instance.get(`/all_courses?email=${user.email}`).then((res) => {
+    instanceunSecure.get(`/all_courses?email=${user.email}`).then((res) => {
       setMyaddCours(res.data);
       console.log(res.data);
     });
-  }, [instance, user]);
+  }, [instanceunSecure, user]);
 
   const detatehandalar = (id) => {
     instance.delete(`/all_courses/${id}`).then((res) => {
