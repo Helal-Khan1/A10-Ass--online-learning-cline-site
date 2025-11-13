@@ -28,10 +28,9 @@ const UpdateCours = () => {
       more_description: form.description.value,
     };
 
-    toast.success("Course updated successfully!");
-
     instance.patch(`/all_courses/${id}`, updatedCourse).then((res) => {
       console.log(res.data);
+      toast.success("Course updated successfully!");
     });
   };
 
@@ -44,6 +43,7 @@ const UpdateCours = () => {
           defaultValue={course.title}
           className="input w-full"
           placeholder="Enter course title"
+          required
         />
         <input
           type="url"
@@ -51,6 +51,7 @@ const UpdateCours = () => {
           defaultValue={course.image_url}
           className="input w-full"
           placeholder="Image URL"
+          required
         />
         <input
           type="text"
@@ -58,6 +59,7 @@ const UpdateCours = () => {
           defaultValue={course.price}
           className="input w-full"
           placeholder="Price"
+          required
         />
         <input
           type="text"
@@ -65,6 +67,7 @@ const UpdateCours = () => {
           defaultValue={course.duration}
           className="input w-full"
           placeholder="Duration"
+          required
         />
         <input
           type="text"
@@ -72,6 +75,7 @@ const UpdateCours = () => {
           defaultValue={course.category}
           className="input w-full"
           placeholder="Category"
+          required
         />
         <input
           type="text"
@@ -79,6 +83,7 @@ const UpdateCours = () => {
           defaultValue={course.more_description}
           className="input w-full"
           placeholder="Description"
+          required
         />
 
         <button

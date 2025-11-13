@@ -6,20 +6,39 @@ import SidBer from "../component/SidBer";
 
 const DashboardLayout = () => {
   return (
-    <div>
-      <header>
-        <Naber></Naber>
+    <div className="min-h-screen flex flex-col bg-base-200">
+      <header className="sticky top-0 z-50 bg-base-100 shadow">
+        <Naber />
       </header>
-      <main className=" w-10/12 mx-auto grid grid-cols-12 gap-6 p-3 ">
-        <aside className="col-span-3 shadow rounded-sm p-2 bg-[#e7e8ec] sticky top-20 h-[calc(100vh-100px)] overflow-y-auto">
+
+      <main className="flex flex-1 flex-col md:flex-row w-11/12 mx-auto gap-4 md:gap-6 p-3 md:p-6">
+        <aside
+          className="
+            bg-base-100 shadow-md rounded-2xl p-4 
+            md:sticky md:top-24 md:h-[calc(100vh-120px)]
+            overflow-y-auto 
+            md:w-3/12 w-full
+            transition-all duration-300
+          "
+        >
           <SidBer />
         </aside>
-        <section className=" col-span-8  bg-[#e7e8ec] ">
-          <Outlet></Outlet>
+
+        {/* 🧾 Main Content Area */}
+        <section
+          className="
+            bg-base-100 shadow-md rounded-2xl 
+            p-4 flex-1 
+            overflow-hidden
+            md:w-9/12 w-full
+          "
+        >
+          <Outlet />
         </section>
       </main>
-      <footer>
-        <Footer></Footer>
+
+      <footer className="mt-auto bg-base-100 border-t">
+        <Footer />
       </footer>
     </div>
   );

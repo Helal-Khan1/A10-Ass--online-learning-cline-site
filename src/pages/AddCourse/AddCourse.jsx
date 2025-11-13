@@ -64,6 +64,7 @@ const AddCourse = () => {
                   className="input w-full"
                   name="title"
                   placeholder=" Enter Your Cours Title "
+                  required
                 />
                 <label className="  text-second ">Image_Url</label>
                 <input
@@ -78,6 +79,7 @@ const AddCourse = () => {
                   name="price"
                   className="input w-full"
                   placeholder=" Enter Your Cours Price "
+                  required
                 />
                 <label className="   text-second ">Duration</label>
                 <input
@@ -85,6 +87,7 @@ const AddCourse = () => {
                   name="duration"
                   className="input w-full"
                   placeholder=" Enter Your Cours Price "
+                  required
                 />
                 <label className="   text-second ">Category</label>
                 <input
@@ -92,6 +95,7 @@ const AddCourse = () => {
                   name="category"
                   className="input w-full"
                   placeholder=" Enter Your Cours Price "
+                  required
                 />
                 <label className="   text-second ">description</label>
                 <input
@@ -99,6 +103,7 @@ const AddCourse = () => {
                   name="description"
                   className="input w-full"
                   placeholder=" Enter Your Cours Price "
+                  required
                 />
                 <label className="   text-second ">isFeatured</label>
                 <input
@@ -106,6 +111,7 @@ const AddCourse = () => {
                   name="isFeatured"
                   className="input w-full"
                   placeholder=" Enter Your Cours Price "
+                  required
                 />
                 <button
                   type="submit"
