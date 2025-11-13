@@ -25,7 +25,7 @@ const Home = () => {
                     </div>
                     Welcome to Online Education
                   </h1>
-                  <h1 className=" font-bold text-5xl text-fast mt-10  ">
+                  <h1 className=" font-bold text-5xl text-fast mt-10 p-3 ">
                     Start learning from <br />
                     the world's
                     <span className=" text-[#00a598]">best institutions</span>

@@ -11,6 +11,7 @@ import Register from "../pages/Register/Register";
 import ProvetRouts from "../ProvetRout/ProvetRouts";
 import CorsDetails from "../component/CorsDetails";
 import Loding from "../pages/AddCourse/Loding/Loding";
+import UpdateCours from "../pages/updatecours/updateCours";
 
 export const router = createBrowserRouter([
   {
@@ -77,6 +78,11 @@ export const router = createBrowserRouter([
         path: "myaddcoruss",
         hydrateFallbackElement: <Loding></Loding>,
         element: <MyAddedCourses></MyAddedCourses>,
+      },
+      {
+        path: "update/:id",
+        hydrateFallbackElement: <Loding></Loding>,
+        element:<UpdateCours></UpdateCours>,
       },
     ],
   },

@@ -18,7 +18,8 @@ const Register = () => {
       }, 2000);
     });
   };
-  const registerhandalar = (event) => {3
+  const registerhandalar = (event) => {
+    3;
     event.preventDefault();
     const name = event.target.name.value;
     const email = event.target.email.value;
@@ -39,7 +40,8 @@ const Register = () => {
     createUser(email, password)
       .then((result) => {
         console.log(result.user);
-        alert("user Register sucssfully");
+        navigate(`${location.state ? location.state : "/"}`);
+        toast("user Register sucssfully");
       })
       .catch((err) => {
         console.log(err);

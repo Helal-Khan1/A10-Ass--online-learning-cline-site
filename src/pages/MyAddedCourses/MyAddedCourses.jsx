@@ -79,9 +79,9 @@ const MyAddedCourses = () => {
                   </button>
                 </Link>
               </div>
-              <Link>
+              <Link to={`/dashbord/update/${course._id}`}>
                 <button className="bg-[#00a598] text-white px-5 py-1 mt-2 w-full rounded-full text-sm flex items-center gap-2 hover:bg-[#038c7e] transition-all">
-                  Update Cores <FaArrowRight />
+                  Update Course <FaArrowRight />
                 </button>
               </Link>
               <button

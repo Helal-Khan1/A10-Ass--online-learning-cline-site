@@ -35,12 +35,12 @@ const AddCourse = () => {
       duration: duration,
       more_description: description,
       image_url: photo,
-    //   benefits: isFeatured,
+      //   benefits: isFeatured,
       email: user.email,
     };
 
     intance.post("/all_courses", newCors).then((res) => {
-      toast()
+      toast("Your course successfully submitted");
       console.log(res.data);
     });
   };

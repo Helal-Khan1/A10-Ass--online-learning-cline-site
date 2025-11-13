@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router";
 import MyContaner from "./Mycontaner";
 import useAuth from "../Hook/useAuth";
@@ -7,27 +7,43 @@ import { BiLogOut } from "react-icons/bi";
 
 const Naber = () => {
   const { user, logOut } = useAuth();
-  console.log(user);
-  const loginhandalar = () => {
-    logOut();
+
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "winter");
+
+  useEffect(() => {
+    document.querySelector("html").setAttribute("data-theme", theme);
+    localStorage.setItem("theme", theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme(theme === "winter" ? "night" : "winter");
   };
+
   const links = (
     <>
       <li>
-        <NavLink>Home</NavLink>
+        <NavLink to="/">Home</NavLink>
       </li>
       <li>
         <NavLink to="/corses">Courses</NavLink>
       </li>
-      <li>
-        <NavLink to="/dashbord">Deshbord</NavLink>
-      </li>
+      {user?.email && (
+        <li>
+          <NavLink to="/dashbord">Dashboard</NavLink>
+        </li>
+      )}
     </>
   );
+
+  const loginhandalar = () => {
+    logOut();
+  };
+
   return (
     <div>
-      <div className="navbar stack bg-base-100 shadow-sm">
+      <div className="navbar bg-base-100 shadow-sm">
         <MyContaner className="flex">
+          {/* --- Left Part --- */}
           <div className="navbar-start">
             <div className="dropdown">
               <div
@@ -57,33 +73,37 @@ const Naber = () => {
                 {links}
               </ul>
             </div>
-            <div>
+            <div className="flex items-center gap-2">
               <img
                 src="https://i.ibb.co.com/ZRywqFjr/download-1.png"
-                className="w-20"
-                alt=""
+                className="w-16"
+                alt="logo"
               />
-            </div>
-
-            <div>
               <p className="btn btn-ghost font-bold text-xl">Education</p>
             </div>
           </div>
+
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">{links}</ul>
           </div>
-          <div className="navbar-end">
+
+          <div className="navbar-end flex items-center gap-2">
+            <button
+              onClick={toggleTheme}
+              className="btn btn-ghost text-xl"
+              title="Toggle Theme"
+            >
+              {theme === "winter" ? "🌙 Light" : "☀️ deark"}
+            </button>
+
             {user ? (
-              <button
-                onClick={loginhandalar}
-                className="btn bg-[#00a598] px-5 text-white "
-              >
-                <LuLogOut></LuLogOut> Log Out
+              <button className="btn btn-primary" onClick={loginhandalar}>
+                <LuLogOut /> Log Out
               </button>
             ) : (
-              <Link to="login">
-                <button className="btn  bg-[#00a598] px-5 text-white ">
-                  <BiLogOut></BiLogOut> Login
+              <Link to="/login">
+                <button className="btn btn-primary">
+                  <BiLogOut /> Login
                 </button>
               </Link>
             )}
