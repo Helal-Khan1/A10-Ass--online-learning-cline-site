@@ -79,3 +79,17 @@ This project uses the following major dependencies:
 
 
 
+  ## 💻 How to Run Locally
+
+| Step | Command / Instruction |
+|------|----------------------|
+| **1. Clone the Repository** | `git clone https://github.com/your-username/your-repo.git` |
+| **2. Navigate to Project Directory** | `cd your-repo` |
+| **3. Install Dependencies** | `npm install`<br>_This will install all required packages listed in `package.json`._ |
+| **4. Start Development Server** | `npm run dev`<br>_The project will usually run at `http://localhost:5173`._ |
+| **5. Open in Browser** | Open your browser and go to the URL displayed in terminal (e.g., `http://localhost:5173`). |
+| **6. Optional: Build for Production** | `npm run build`<br>_Creates a production-ready build in the `dist` folder._ |
+
+
+
+
