@@ -46,5 +46,36 @@ Users can view the courses in which they are enrolled.
   - Fully responsive design for mobile, tablet, and desktop.
 
 - **Modern UI/UX**  
-  - Clean layout, easy navigation, and user-friendly interface.  
+  - Clean layout, easy navigation, and user-friendly interface.
+ 
+
+ 
+
+## 📦 Project Dependencies
+
+This project uses the following major dependencies:
+
+- **@tailwindcss/vite** — Tailwind CSS Vite integration  
+- **axios** — Promise-based HTTP client  
+- **firebase** — Authentication & backend services  
+- **motion** — Animation library for smooth UI transitions  
+- **react** — Core library for building the user interface  
+- **react-dom** — React DOM renderer  
+- **react-icons** — Popular icons for React  
+- **react-router** — Routing system for React  
+- **react-spinners** — Loading spinners for UI  
+- **react-toastify** — Toast notifications  
+- **tailwindcss** — Utility-first CSS framework
+
+## 🔗 Live & Relevant Links
+
+- 🚀 **Live Website:** [Click Here](https://your-live-link.com)
+
+- 🗂️ **Client Repository:**  
+  https://github.com/your-username/your-client-repo
+
+- 🛠️ **Server Repository (if available):**  
+  https://github.com/your-username/your-server-repo
+
+
 
