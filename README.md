@@ -69,7 +69,7 @@ This project uses the following major dependencies:
 
 ## 🔗 Live & Relevant Links
 
-- 🚀 **Live Website:** [Click Here](https://your-live-link.com)
+- 🚀 **Live Website:** [Click Here]https://lucky-hummingbird-2efca1.netlify.app/
 
 - 🗂️ **Client Repository:**  
   https://github.com/your-username/your-client-repo
